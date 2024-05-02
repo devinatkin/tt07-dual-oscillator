@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+In Progress- This project will be a pair of oscillators tuned to operate at 20Mhz and 21Mhz approximately (They'll oscillate on every corner, just not necessarily at exactly the right frequency)
 
 ## How to test
 
-Explain how to use your project
+Measure the output from the first two analog pins to see the output signals 
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+No external hardware is required for this module to function

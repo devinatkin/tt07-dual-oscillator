@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  title:        "dual oscillator"      # Project title
+  author:       "Devin Atkin"      # Your name
+  discord:      "devinatkin"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "20 Mhz and 21Mhz Output Sine Waves"      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -14,7 +14,7 @@ project:
   analog_pins: 2        # Valid values: 0 to 6
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_example"
+  top_module:  "tt_um_devinatkin_dual_oscillator"
 
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:        
@@ -53,8 +53,8 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: ""
-  ua[1]: ""
+  ua[0]: "20Mhz Output"
+  ua[1]: "21Mhz Output"
   ua[2]: ""
   ua[3]: ""
   ua[4]: ""
