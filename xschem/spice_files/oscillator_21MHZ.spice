@@ -1,0 +1,115 @@
+** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/oscillator_21MHZ.sch
+.subckt oscillator_21MHZ VCC OUT VSS
+*.PININFO VCC:B VSS:B OUT:O
+x1[99] INI[98] OUT VCC VSS inverter
+x1[98] INI[97] INI[98] VCC VSS inverter
+x1[97] INI[96] INI[97] VCC VSS inverter
+x1[96] INI[95] INI[96] VCC VSS inverter
+x1[95] INI[94] INI[95] VCC VSS inverter
+x1[94] INI[93] INI[94] VCC VSS inverter
+x1[93] INI[92] INI[93] VCC VSS inverter
+x1[92] INI[91] INI[92] VCC VSS inverter
+x1[91] INI[90] INI[91] VCC VSS inverter
+x1[90] INI[89] INI[90] VCC VSS inverter
+x1[89] INI[88] INI[89] VCC VSS inverter
+x1[88] INI[87] INI[88] VCC VSS inverter
+x1[87] INI[86] INI[87] VCC VSS inverter
+x1[86] INI[85] INI[86] VCC VSS inverter
+x1[85] INI[84] INI[85] VCC VSS inverter
+x1[84] INI[83] INI[84] VCC VSS inverter
+x1[83] INI[82] INI[83] VCC VSS inverter
+x1[82] INI[81] INI[82] VCC VSS inverter
+x1[81] INI[80] INI[81] VCC VSS inverter
+x1[80] INI[79] INI[80] VCC VSS inverter
+x1[79] INI[78] INI[79] VCC VSS inverter
+x1[78] INI[77] INI[78] VCC VSS inverter
+x1[77] INI[76] INI[77] VCC VSS inverter
+x1[76] INI[75] INI[76] VCC VSS inverter
+x1[75] INI[74] INI[75] VCC VSS inverter
+x1[74] INI[73] INI[74] VCC VSS inverter
+x1[73] INI[72] INI[73] VCC VSS inverter
+x1[72] INI[71] INI[72] VCC VSS inverter
+x1[71] INI[70] INI[71] VCC VSS inverter
+x1[70] INI[69] INI[70] VCC VSS inverter
+x1[69] INI[68] INI[69] VCC VSS inverter
+x1[68] INI[67] INI[68] VCC VSS inverter
+x1[67] INI[66] INI[67] VCC VSS inverter
+x1[66] INI[65] INI[66] VCC VSS inverter
+x1[65] INI[64] INI[65] VCC VSS inverter
+x1[64] INI[63] INI[64] VCC VSS inverter
+x1[63] INI[62] INI[63] VCC VSS inverter
+x1[62] INI[61] INI[62] VCC VSS inverter
+x1[61] INI[60] INI[61] VCC VSS inverter
+x1[60] INI[59] INI[60] VCC VSS inverter
+x1[59] INI[58] INI[59] VCC VSS inverter
+x1[58] INI[57] INI[58] VCC VSS inverter
+x1[57] INI[56] INI[57] VCC VSS inverter
+x1[56] INI[55] INI[56] VCC VSS inverter
+x1[55] INI[54] INI[55] VCC VSS inverter
+x1[54] INI[53] INI[54] VCC VSS inverter
+x1[53] INI[52] INI[53] VCC VSS inverter
+x1[52] INI[51] INI[52] VCC VSS inverter
+x1[51] INI[50] INI[51] VCC VSS inverter
+x1[50] INI[49] INI[50] VCC VSS inverter
+x1[49] INI[48] INI[49] VCC VSS inverter
+x1[48] INI[47] INI[48] VCC VSS inverter
+x1[47] INI[46] INI[47] VCC VSS inverter
+x1[46] INI[45] INI[46] VCC VSS inverter
+x1[45] INI[44] INI[45] VCC VSS inverter
+x1[44] INI[43] INI[44] VCC VSS inverter
+x1[43] INI[42] INI[43] VCC VSS inverter
+x1[42] INI[41] INI[42] VCC VSS inverter
+x1[41] INI[40] INI[41] VCC VSS inverter
+x1[40] INI[39] INI[40] VCC VSS inverter
+x1[39] INI[38] INI[39] VCC VSS inverter
+x1[38] INI[37] INI[38] VCC VSS inverter
+x1[37] INI[36] INI[37] VCC VSS inverter
+x1[36] INI[35] INI[36] VCC VSS inverter
+x1[35] INI[34] INI[35] VCC VSS inverter
+x1[34] INI[33] INI[34] VCC VSS inverter
+x1[33] INI[32] INI[33] VCC VSS inverter
+x1[32] INI[31] INI[32] VCC VSS inverter
+x1[31] INI[30] INI[31] VCC VSS inverter
+x1[30] INI[29] INI[30] VCC VSS inverter
+x1[29] INI[28] INI[29] VCC VSS inverter
+x1[28] INI[27] INI[28] VCC VSS inverter
+x1[27] INI[26] INI[27] VCC VSS inverter
+x1[26] INI[25] INI[26] VCC VSS inverter
+x1[25] INI[24] INI[25] VCC VSS inverter
+x1[24] INI[23] INI[24] VCC VSS inverter
+x1[23] INI[22] INI[23] VCC VSS inverter
+x1[22] INI[21] INI[22] VCC VSS inverter
+x1[21] INI[20] INI[21] VCC VSS inverter
+x1[20] INI[19] INI[20] VCC VSS inverter
+x1[19] INI[18] INI[19] VCC VSS inverter
+x1[18] INI[17] INI[18] VCC VSS inverter
+x1[17] INI[16] INI[17] VCC VSS inverter
+x1[16] INI[15] INI[16] VCC VSS inverter
+x1[15] INI[14] INI[15] VCC VSS inverter
+x1[14] INI[13] INI[14] VCC VSS inverter
+x1[13] INI[12] INI[13] VCC VSS inverter
+x1[12] INI[11] INI[12] VCC VSS inverter
+x1[11] INI[10] INI[11] VCC VSS inverter
+x1[10] INI[9] INI[10] VCC VSS inverter
+x1[9] INI[8] INI[9] VCC VSS inverter
+x1[8] INI[7] INI[8] VCC VSS inverter
+x1[7] INI[6] INI[7] VCC VSS inverter
+x1[6] INI[5] INI[6] VCC VSS inverter
+x1[5] INI[4] INI[5] VCC VSS inverter
+x1[4] INI[3] INI[4] VCC VSS inverter
+x1[3] INI[2] INI[3] VCC VSS inverter
+x1[2] INI[1] INI[2] VCC VSS inverter
+x1[1] INI[0] INI[1] VCC VSS inverter
+x1[0] OUT INI[0] VCC VSS inverter
+.ends
+
+* expanding   symbol:  inverter.sym # of pins=4
+** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/inverter.sym
+** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/inverter.sch
+.subckt inverter OUT IN VDD VSS
+*.PININFO VDD:B VSS:B IN:I OUT:O
+XM1 OUT IN VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM2 OUT IN VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+.ends
+
+.end

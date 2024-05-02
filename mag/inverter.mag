@@ -1,0 +1,51 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1714682669
+<< viali >>
+rect 538 1028 868 1080
+rect 544 -196 874 -144
+<< metal1 >>
+rect 494 1080 916 1092
+rect 494 1028 538 1080
+rect 868 1028 916 1080
+rect 494 1022 916 1028
+rect 516 876 570 1022
+rect 670 908 736 972
+rect 516 670 676 876
+rect 728 678 816 876
+rect 516 668 570 670
+rect 728 668 820 678
+rect 670 524 736 638
+rect 496 378 736 524
+rect 670 232 736 378
+rect 788 524 820 668
+rect 788 378 916 524
+rect 788 232 820 378
+rect 530 4 694 204
+rect 770 202 820 232
+rect 530 -134 584 4
+rect 728 2 820 202
+rect 670 -84 738 -32
+rect 494 -144 916 -134
+rect 494 -196 544 -144
+rect 874 -196 916 -144
+rect 494 -208 916 -196
+use sky130_fd_pr__pfet_01v8_XGS3BL  XM1 ~/tt07-dual-oscillator/mag
+timestamp 1714674026
+transform 1 0 703 0 1 773
+box -211 -319 211 319
+use sky130_fd_pr__nfet_01v8_648S5X  XM2 ~/tt07-dual-oscillator/mag
+timestamp 1714674026
+transform 1 0 705 0 1 104
+box -211 -310 211 310
+<< labels >>
+flabel metal1 496 378 736 524 0 FreeSans 208 0 0 0 IN
+port 3 nsew
+flabel metal1 788 378 916 524 0 FreeSans 208 0 0 0 OUT
+port 4 nsew
+flabel metal1 494 1022 538 1092 0 FreeSans 208 0 0 0 VDD
+port 1 nsew
+flabel metal1 494 -208 544 -134 0 FreeSans 208 0 0 0 VSS
+port 2 nsew
+<< end >>
