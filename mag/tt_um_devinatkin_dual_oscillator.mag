@@ -1,7 +1,11 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1714771518
+timestamp 1715094101
+<< checkpaint >>
+rect 2930 734 6750 45590
+<< pwell >>
+rect 4122 1994 4232 44318
 << metal1 >>
 rect 2848 1767 2920 2206
 rect 4076 2064 4262 44152
@@ -161,11 +165,11 @@ rect 26866 0 27046 200
 rect 31264 112 31462 200
 rect 31282 0 31462 112
 use oscillator_20MHZ  oscillator_20MHZ_0 ~/tt07-dual-oscillator/mag
-timestamp 1714771518
+timestamp 1715094101
 transform 0 1 3590 -1 0 43760
 box -570 600 41766 1900
-use oscillator_21MHZ  oscillator_21MHZ_0
-timestamp 1714771518
+use oscillator_21MHZ  oscillator_21MHZ_0 ~/tt07-dual-oscillator/mag
+timestamp 1715094101
 transform 0 -1 4750 -1 0 44148
 box -170 600 42154 1900
 << labels >>

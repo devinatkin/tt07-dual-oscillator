@@ -1,27 +1,30 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1714771518
+timestamp 1715094210
 << nwell >>
-rect 318 452 1070 1092
+rect 318 1018 1070 1092
+rect 318 964 550 1018
+rect 798 964 1070 1018
+rect 318 452 1070 964
 << pwell >>
 rect 318 -206 1074 452
 rect 458 -208 944 -206
 << psubdiff >>
 rect 458 -170 520 378
 rect 876 -170 938 378
+rect 458 -196 938 -170
 << nsubdiff >>
-rect 458 522 538 1022
+rect 422 490 544 1056
 << viali >>
-rect 538 1028 868 1080
 rect 544 -196 874 -144
 << metal1 >>
-rect 494 1080 916 1092
-rect 494 1028 538 1080
-rect 868 1028 916 1080
-rect 494 1022 916 1028
-rect 516 876 570 1022
-rect 670 908 736 972
+rect 496 1018 928 1060
+rect 496 984 572 1018
+rect 798 984 928 1018
+rect 516 964 572 984
+rect 516 876 570 964
+rect 670 908 736 964
 rect 516 670 676 876
 rect 728 678 816 876
 rect 516 668 570 670
@@ -42,20 +45,20 @@ rect 494 -196 544 -144
 rect 874 -196 916 -144
 rect 494 -208 916 -196
 use sky130_fd_pr__pfet_01v8_XGS3BL  XM1
-timestamp 1714771518
-transform 1 0 703 0 1 773
+timestamp 1715094101
+transform 1 0 699 0 1 773
 box -211 -319 211 319
 use sky130_fd_pr__nfet_01v8_648S5X  XM2
-timestamp 1714771518
+timestamp 1715094210
 transform 1 0 705 0 1 104
-box -211 -310 235 954
+box -211 -310 211 310
 << labels >>
 flabel metal1 496 378 736 524 0 FreeSans 208 0 0 0 IN
 port 3 nsew
-flabel metal1 788 378 916 524 0 FreeSans 208 0 0 0 OUT
-port 4 nsew
-flabel metal1 494 1022 538 1092 0 FreeSans 208 0 0 0 VDD
-port 1 nsew
 flabel metal1 494 -208 544 -134 0 FreeSans 208 0 0 0 VSS
 port 2 nsew
+flabel metal1 788 378 916 524 0 FreeSans 208 0 0 0 OUT
+port 4 nsew
+flabel metal1 798 984 914 1060 0 FreeSans 480 0 0 0 VDD
+port 7 nsew
 << end >>
