@@ -1,6 +1,9 @@
 magic
 tech sky130A
-timestamp 1714689377
+timestamp 1714756120
+<< metal1 >>
+rect 22 917 213 942
+rect 12 306 203 331
 << via1 >>
 rect 12 605 119 658
 rect 20944 598 20985 661
@@ -12,7 +15,7 @@ rect 119 605 20944 658
 rect 4 598 20944 605
 rect 20985 598 20998 661
 rect 4 592 20998 598
-use inverter  x1[0]
+use inverter  x1[0] ~/tt07-dual-oscillator/mag
 timestamp 1714682669
 transform 1 0 20540 0 1 404
 box 246 -104 458 546
@@ -413,10 +416,10 @@ timestamp 1714682669
 transform 1 0 -244 0 1 404
 box 246 -104 458 546
 << labels >>
-flabel space 190 915 235 950 0 FreeSans 104 0 0 0 VCC
-port 1 nsew
-flabel space 3 300 28 337 0 FreeSans 104 0 0 0 VSS
-port 3 nsew
 flabel via1 12 605 119 658 0 FreeSans 104 0 0 0 OUT
 port 4 nsew
+flabel metal1 12 306 203 331 0 FreeSans 400 0 0 0 VSS
+port 7 nsew
+flabel metal1 22 917 213 942 0 FreeSans 400 0 0 0 VCC
+port 8 nsew
 << end >>

@@ -31,11 +31,11 @@ rect 494 -144 916 -134
 rect 494 -196 544 -144
 rect 874 -196 916 -144
 rect 494 -208 916 -196
-use sky130_fd_pr__pfet_01v8_XGS3BL  XM1 ~/tt07-dual-oscillator/mag
+use sky130_fd_pr__pfet_01v8_XGS3BL  XM1
 timestamp 1714674026
 transform 1 0 703 0 1 773
 box -211 -319 211 319
-use sky130_fd_pr__nfet_01v8_648S5X  XM2 ~/tt07-dual-oscillator/mag
+use sky130_fd_pr__nfet_01v8_648S5X  XM2
 timestamp 1714674026
 transform 1 0 705 0 1 104
 box -211 -310 211 310

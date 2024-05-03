@@ -1,6 +1,9 @@
 magic
 tech sky130A
-timestamp 1714689377
+timestamp 1714755963
+<< metal1 >>
+rect -181 920 -16 949
+rect -172 302 -7 331
 << via1 >>
 rect -188 601 -93 654
 rect 20748 600 20791 656
@@ -413,10 +416,10 @@ timestamp 1714682669
 transform 1 0 -444 0 1 404
 box 246 -104 458 546
 << labels >>
-flabel space -197 915 -175 950 0 FreeSans 400 0 0 0 VCC
-port 0 nsew
-flabel space -197 300 -172 337 0 FreeSans 400 0 0 0 VSS
-port 1 nsew
 flabel metal2 -93 593 20748 666 0 FreeSans 400 0 0 0 OUT
 port 4 nsew
+flabel metal1 -172 302 -7 331 0 FreeSans 400 0 0 0 VSS
+port 5 nsew
+flabel metal1 -181 920 -16 949 0 FreeSans 400 0 0 0 VCC
+port 6 nsew
 << end >>
