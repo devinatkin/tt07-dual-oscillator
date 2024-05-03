@@ -1,6 +1,18 @@
 magic
 tech sky130A
-timestamp 1714755963
+timestamp 1714771518
+<< psubdiff >>
+rect -8 319 34 593
+rect 204 319 246 593
+rect 414 319 456 593
+<< nsubdiff >>
+rect -15 649 43 932
+<< locali >>
+rect -14 648 47 944
+rect 192 647 253 943
+rect -15 319 41 593
+rect 202 319 244 593
+rect 414 319 456 593
 << metal1 >>
 rect -181 920 -16 949
 rect -172 302 -7 331
@@ -16,405 +28,405 @@ rect -196 600 20748 601
 rect 20791 600 20804 656
 rect -196 593 20804 600
 use inverter  x1[0]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 20346 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[1]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 20136 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[2]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 19926 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[3]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 19716 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[4]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 19506 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[5]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 19296 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[6]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 19086 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[7]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 18876 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[8]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 18666 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[9]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 18456 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[10]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 18246 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[11]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 18036 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[12]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 17826 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[13]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 17616 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[14]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 17406 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[15]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 17196 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[16]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 16986 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[17]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 16776 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[18]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 16566 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[19]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 16356 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[20]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 16146 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[21]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 15936 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[22]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 15726 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[23]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 15516 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[24]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 15306 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[25]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 15096 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[26]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 14886 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[27]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 14676 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[28]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 14466 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[29]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 14256 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[30]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 14046 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[31]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 13836 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[32]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 13626 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[33]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 13416 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[34]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 13206 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[35]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 12996 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[36]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 12786 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[37]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 12576 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[38]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 12366 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[39]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 12156 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[40]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 11946 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[41]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 11736 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[42]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 11526 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[43]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 11316 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[44]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 11106 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[45]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 10896 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[46]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 10686 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[47]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 10476 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[48]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 10266 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[49]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 10056 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[50]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 9846 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[51]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 9636 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[52]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 9426 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[53]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 9216 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[54]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 9006 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[55]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 8796 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[56]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 8586 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[57]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 8376 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[58]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 8166 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[59]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 7956 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[60]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 7746 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[61]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 7536 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[62]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 7326 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[63]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 7116 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[64]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 6906 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[65]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 6696 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[66]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 6486 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[67]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 6276 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[68]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 6066 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[69]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 5856 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[70]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 5646 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[71]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 5436 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[72]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 5226 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[73]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 5016 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[74]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 4806 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[75]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 4596 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[76]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 4386 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[77]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 4176 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[78]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 3966 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[79]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 3756 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[80]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 3546 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[81]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 3336 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[82]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 3126 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[83]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 2916 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[84]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 2706 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[85]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 2496 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[86]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 2286 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[87]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 2076 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[88]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 1866 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[89]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 1656 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[90]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 1446 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[91]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 1236 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[92]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 1026 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[93]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 816 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[94]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 606 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[95]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 396 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[96]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 186 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[97]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 -24 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[98]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 -234 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 use inverter  x1[99]
-timestamp 1714682669
+timestamp 1714771518
 transform 1 0 -444 0 1 404
-box 246 -104 458 546
+box 159 -104 537 546
 << labels >>
 flabel metal2 -93 593 20748 666 0 FreeSans 400 0 0 0 OUT
 port 4 nsew
