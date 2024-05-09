@@ -19,15 +19,11 @@ module tt_um_devinatkin_dual_oscillator (
     input  wire       rst_n     // reset_n - low to reset
 );
 
-oscillator_20MHZ oscillator_20MHZ(
+top top(
 	.VCC(VPWR),
 	.VSS(VGND),
-	.OUT(ua[0])
-);
-osillator_21MHZ oscillator_21MHZ
-	.VCC(VPWR),
-	.VSS(VGND),
-	.OUT(ua[1])
+	.OUTA(ua[0]),
+	.OUTB(ua[1])
 );
 
     assign uo_out[0] = VGND;

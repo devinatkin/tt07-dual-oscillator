@@ -1,0 +1,67 @@
+magic
+tech sky130A
+timestamp 1715205744
+<< nwell >>
+rect -97 -150 97 150
+<< pmos >>
+rect -50 -100 50 100
+<< pdiff >>
+rect -79 94 -50 100
+rect -79 -94 -73 94
+rect -56 -94 -50 94
+rect -79 -100 -50 -94
+rect 50 94 79 100
+rect 50 -94 56 94
+rect 73 -94 79 94
+rect 50 -100 79 -94
+<< pdiffc >>
+rect -73 -94 -56 94
+rect 56 -94 73 94
+<< poly >>
+rect -50 140 50 148
+rect -50 123 -42 140
+rect 42 123 50 140
+rect -50 100 50 123
+rect -50 -123 50 -100
+rect -50 -140 -42 -123
+rect 42 -140 50 -123
+rect -50 -148 50 -140
+<< polycont >>
+rect -42 123 42 140
+rect -42 -140 42 -123
+<< locali >>
+rect -50 123 -42 140
+rect 42 123 50 140
+rect -73 94 -56 102
+rect -73 -102 -56 -94
+rect 56 94 73 102
+rect 56 -102 73 -94
+rect -50 -140 -42 -123
+rect 42 -140 50 -123
+<< viali >>
+rect -42 123 42 140
+rect -73 -94 -56 94
+rect 56 -94 73 94
+rect -42 -140 42 -123
+<< metal1 >>
+rect -48 140 48 143
+rect -48 123 -42 140
+rect 42 123 48 140
+rect -48 120 48 123
+rect -76 94 -53 100
+rect -76 -94 -73 94
+rect -56 -94 -53 94
+rect -76 -100 -53 -94
+rect 53 94 76 100
+rect 53 -94 56 94
+rect 73 -94 76 94
+rect 53 -100 76 -94
+rect -48 -123 48 -120
+rect -48 -140 -42 -123
+rect 42 -140 48 -123
+rect -48 -143 48 -140
+<< properties >>
+string gencell sky130_fd_pr__pfet_01v8
+string library sky130
+string parameters w 2.0 l 1.0 m 1 nf 1 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 compatible {sky130_fd_pr__pfet_01v8  sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_hvt  sky130_fd_pr__pfet_g5v0d10v5} full_metal 0 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0
+<< end >>

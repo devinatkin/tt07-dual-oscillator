@@ -1,0 +1,48 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1715268526
+<< pwell >>
+rect 1090 -540 1416 -430
+<< metal1 >>
+rect 404 -458 1416 -430
+rect 404 -528 1164 -458
+rect 1292 -528 1416 -458
+rect 404 -538 1416 -528
+rect 1090 -540 1416 -538
+rect 18238 -1306 18762 -1094
+rect 422 -2246 1350 -1904
+rect 26292 -3062 26560 -2862
+rect 1098 -3624 1326 -3612
+rect 1098 -3700 1164 -3624
+rect 1296 -3700 1326 -3624
+rect 1098 -3716 1326 -3700
+<< via1 >>
+rect 1164 -528 1292 -458
+rect 1164 -3700 1296 -3624
+<< metal2 >>
+rect 1144 -458 1308 -446
+rect 1144 -528 1164 -458
+rect 1292 -528 1308 -458
+rect 1144 -3624 1308 -528
+rect 1144 -3700 1164 -3624
+rect 1296 -3700 1308 -3624
+rect 1144 -3706 1308 -3700
+use oscillator_20MHZ  oscillator_20MHZ_0
+timestamp 1715224094
+transform 1 0 404 0 1 -3721
+box 0 -1 26159 1646
+use oscillator_21MHZ  oscillator_21MHZ_0
+timestamp 1715223625
+transform 1 0 404 0 -1 -431
+box 0 -1 18074 1645
+<< labels >>
+flabel metal1 428 -2228 1106 -1930 0 FreeSans 1600 0 0 0 VCC
+port 0 nsew
+flabel metal1 1098 -3716 1326 -3612 0 FreeSans 1600 0 0 0 VSS
+port 1 nsew
+flabel metal1 18238 -1306 18762 -1094 0 FreeSans 1600 0 0 0 OUTB
+port 3 nsew
+flabel metal1 26292 -3062 26560 -2862 0 FreeSans 1600 0 0 0 OUTA
+port 4 nsew
+<< end >>

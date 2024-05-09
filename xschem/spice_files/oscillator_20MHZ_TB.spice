@@ -1,0 +1,89 @@
+** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/oscillator_20MHZ_TB.sch
+**.subckt oscillator_20MHZ_TB
+x1 VCC OUT VSS oscillator_20MHZ
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /home/dmatkin/.volare/volare/sky130/versions/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+
+
+
+* ngspice commands
+.param VCC=1.8
+vvss vss 0 dc 0
+vvcc vcc 0 pwl 0 0 10n 0 10.1n VCC 2000n VCC
+
+.control
+tran 100p 2000n
+write top_tb.raw
+.endc
+
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  oscillator_20MHZ.sym # of pins=3
+** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/oscillator_20MHZ.sym
+** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/oscillator_20MHZ.sch
+.subckt oscillator_20MHZ VCC OUT VSS
+*.iopin VCC
+*.iopin VSS
+*.opin OUT
+x1[30] INI[29] OUT_INI VCC VSS inverter
+x1[29] INI[28] INI[29] VCC VSS inverter
+x1[28] INI[27] INI[28] VCC VSS inverter
+x1[27] INI[26] INI[27] VCC VSS inverter
+x1[26] INI[25] INI[26] VCC VSS inverter
+x1[25] INI[24] INI[25] VCC VSS inverter
+x1[24] INI[23] INI[24] VCC VSS inverter
+x1[23] INI[22] INI[23] VCC VSS inverter
+x1[22] INI[21] INI[22] VCC VSS inverter
+x1[21] INI[20] INI[21] VCC VSS inverter
+x1[20] INI[19] INI[20] VCC VSS inverter
+x1[19] INI[18] INI[19] VCC VSS inverter
+x1[18] INI[17] INI[18] VCC VSS inverter
+x1[17] INI[16] INI[17] VCC VSS inverter
+x1[16] INI[15] INI[16] VCC VSS inverter
+x1[15] INI[14] INI[15] VCC VSS inverter
+x1[14] INI[13] INI[14] VCC VSS inverter
+x1[13] INI[12] INI[13] VCC VSS inverter
+x1[12] INI[11] INI[12] VCC VSS inverter
+x1[11] INI[10] INI[11] VCC VSS inverter
+x1[10] INI[9] INI[10] VCC VSS inverter
+x1[9] INI[8] INI[9] VCC VSS inverter
+x1[8] INI[7] INI[8] VCC VSS inverter
+x1[7] INI[6] INI[7] VCC VSS inverter
+x1[6] INI[5] INI[6] VCC VSS inverter
+x1[5] INI[4] INI[5] VCC VSS inverter
+x1[4] INI[3] INI[4] VCC VSS inverter
+x1[3] INI[2] INI[3] VCC VSS inverter
+x1[2] INI[1] INI[2] VCC VSS inverter
+x1[1] INI[0] INI[1] VCC VSS inverter
+x1[0] OUT_INI INI[0] VCC VSS inverter
+x3 OUT OUT_INI VCC VSS inverter
+.ends
+
+
+* expanding   symbol:  inverter.sym # of pins=4
+** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/inverter.sym
+** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/inverter.sch
+.subckt inverter OUT IN VCC VSS
+*.iopin VCC
+*.iopin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN net1 VCC sky130_fd_pr__pfet_01v8 L=1 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 OUT IN net2 VSS sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net1 VSS VCC VCC sky130_fd_pr__pfet_01v8 L=1 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net2 VCC VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end

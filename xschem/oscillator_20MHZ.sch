@@ -5,21 +5,37 @@ K {}
 V {}
 S {}
 E {}
-N 102.5 -137.5 102.5 -95 {
+N 120 -810 120 -767.5 {
 lab=VCC}
-N 102.5 -15 102.5 12.5 {
+N 120 -687.5 120 -660 {
 lab=VSS}
-N -2.5 -60 45 -60 {
-lab=OUT,INI[98:0]}
-N 135 -60 192.5 -60 {
-lab=INI[98:0],OUT}
-N 192.5 -60 267.5 -60 {
-lab=INI[98:0],OUT}
-C {inverter.sym} 80 -60 0 0 {name=x1[99:0]}
-C {devices/iopin.sym} -87.5 -152.5 0 0 {name=p1 lab=VCC}
-C {devices/iopin.sym} -87.5 -127.5 0 0 {name=p2 lab=VSS}
-C {devices/opin.sym} 290 -137.5 0 0 {name=p3 lab=OUT}
-C {devices/lab_wire.sym} 267.5 -60 0 0 {name=p4 sig_type=std_logic lab=INI[98:0],OUT}
-C {devices/lab_wire.sym} 12.5 -60 0 0 {name=p5 sig_type=std_logic lab=OUT,INI[98:0]}
-C {devices/lab_wire.sym} 102.5 -137.5 0 0 {name=p6 sig_type=std_logic lab=VCC}
-C {devices/lab_wire.sym} 102.5 12.5 0 0 {name=p7 sig_type=std_logic lab=VSS}
+N 15 -732.5 62.5 -732.5 {
+lab=OUT_INI,INI[29:0]}
+N 152.5 -732.5 210 -732.5 {
+lab=INI[29:0],OUT_INI}
+N 210 -732.5 285 -732.5 {
+lab=INI[29:0],OUT_INI}
+N 392.5 -735 452.5 -735 {
+lab=OUT_INI}
+N 510 -812.5 510 -770 {
+lab=VCC}
+N 510 -690 510 -662.5 {
+lab=VSS}
+N 565 -735 577.5 -735 {
+lab=OUT}
+N 577.5 -735 687.5 -735 {
+lab=OUT}
+N 542.5 -735 565 -735 {
+lab=OUT}
+C {inverter.sym} 97.5 -732.5 0 0 {name=x1[30:0]}
+C {devices/iopin.sym} -70 -825 0 0 {name=p5 lab=VCC}
+C {devices/iopin.sym} -70 -800 0 0 {name=p6 lab=VSS}
+C {devices/lab_wire.sym} 285 -732.5 0 0 {name=p7 sig_type=std_logic lab=INI[29:0],OUT_INI}
+C {devices/lab_wire.sym} 30 -732.5 0 0 {name=p8 sig_type=std_logic lab=OUT_INI,INI[29:0]}
+C {devices/lab_wire.sym} 120 -810 0 0 {name=p9 sig_type=std_logic lab=VCC}
+C {devices/lab_wire.sym} 120 -660 0 0 {name=p10 sig_type=std_logic lab=VSS}
+C {devices/opin.sym} 687.5 -735 0 0 {name=p11 lab=OUT}
+C {inverter.sym} 487.5 -735 0 0 {name=x3}
+C {devices/lab_wire.sym} 510 -662.5 0 0 {name=p22 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 510 -812.5 0 0 {name=p23 sig_type=std_logic lab=VCC}
+C {devices/lab_wire.sym} 437.5 -735 0 0 {name=p24 sig_type=std_logic lab=OUT_INI}
