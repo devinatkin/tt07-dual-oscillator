@@ -1,0 +1,9 @@
+** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/second_stage.sch
+.subckt second_stage VCC DIFF_OUT OUT IBIAS VSS
+*.PININFO VCC:B VSS:B IBIAS:I DIFF_OUT:I OUT:O
+XM6 OUT IBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=0.5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=19 m=19
+XM7 OUT DIFF_OUT VCC VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=14 m=14
+.ends
+.end

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1715268526
+timestamp 1716334113
 << pwell >>
 rect 1090 -540 1416 -430
 << metal1 >>
@@ -28,6 +28,10 @@ rect 1144 -3624 1308 -528
 rect 1144 -3700 1164 -3624
 rect 1296 -3700 1308 -3624
 rect 1144 -3706 1308 -3700
+use indiff  indiff_0
+timestamp 1716478495
+transform 1 0 11636 0 1 72
+box -382 -304 2344 2930
 use oscillator_20MHZ  oscillator_20MHZ_0
 timestamp 1715224094
 transform 1 0 404 0 1 -3721

@@ -1,0 +1,7 @@
+** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/tail_current.sch
+.subckt tail_current TAILV IBIAS VSS
+*.PININFO VSS:B IBIAS:I TAILV:B
+XM3 TAILV IBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=8 m=8
+.ends
+.end

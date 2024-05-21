@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 -567.5 -305 232.5 95 {flags=graph
+B 2 122.5 -615 922.5 -215 {flags=graph
 y1=0
 y2=2
 ypos1=0
@@ -76,26 +76,14 @@ N -300 330 -300 350 {
 lab=OUT}
 N -300 410 -300 470 {
 lab=VSS}
-N -1070 390 -1070 450 {
-lab=VSS}
-N -1070 450 -940 450 {
-lab=VSS}
-N -1070 360 -1030 360 {
-lab=VSS}
-N -1030 360 -1030 450 {
-lab=VSS}
-N -1110 290 -1110 360 {
-lab=IBIAS}
-N -1110 290 -1070 290 {
-lab=IBIAS}
-N -1070 290 -1070 330 {
-lab=IBIAS}
-N -1070 260 -1070 290 {
-lab=IBIAS}
-N -1070 130 -1070 200 {
-lab=VCC}
 N -630 230 -570 230 {
 lab=IBIAS}
+N -1450 170 -1450 220 {
+lab=VCC}
+N -1300 270 -1240 270 {
+lab=IBIAS}
+N -1450 320 -1450 380 {
+lab=VSS}
 C {devices/code.sym} -1060 597.5 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -137,7 +125,7 @@ C {devices/lab_pin.sym} -690 350 1 0 {name=p6 sig_type=std_logic lab=INB}
 C {devices/lab_pin.sym} -300 330 1 0 {name=p7 sig_type=std_logic lab=OUT}
 C {devices/vsource.sym} -750 400 0 0 {name=V1 value=0.9
  savecurrent=false}
-C {devices/vsource.sym} -940 400 0 0 {name=V2 value="SIN(0.9 0.15 50000000)" savecurrent=false}
+C {devices/vsource.sym} -940 400 0 0 {name=V2 value="SIN(0.9 0.3 22000000)" savecurrent=false}
 C {devices/lab_pin.sym} -940 450 0 0 {name=p8 sig_type=std_logic lab=VSS}
 C {devices/res.sym} -890 310 1 0 {name=R1
 value=10k
@@ -157,20 +145,7 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} -300 450 0 0 {name=p10 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} -930 310 1 0 {name=p11 sig_type=std_logic lab=INPUT}
-C {sky130_fd_pr/nfet_01v8.sym} -1090 360 0 0 {name=M3
-L=1
-W=40
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {devices/isource.sym} -1070 230 0 0 {name=I0 value=60u}
-C {devices/lab_pin.sym} -1070 150 0 0 {name=p12 sig_type=std_logic lab=VCC}
-C {devices/lab_pin.sym} -1110 300 0 0 {name=p13 sig_type=std_logic lab=IBIAS}
+C {devices/lab_pin.sym} -1450 190 0 0 {name=p14 sig_type=std_logic lab=VCC}
+C {devices/lab_pin.sym} -1270 270 1 0 {name=p15 sig_type=std_logic lab=IBIAS}
+C {current_source.sym} -1450 270 0 0 {name=x2}
+C {devices/lab_pin.sym} -1450 350 0 0 {name=p16 sig_type=std_logic lab=VSS}

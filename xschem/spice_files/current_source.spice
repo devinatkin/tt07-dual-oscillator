@@ -1,0 +1,7 @@
+** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/current_source.sch
+.subckt current_source VCC VSS IBIAS
+*.PININFO VCC:B VSS:B IBIAS:O
+XM3 IBIAS IBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 m=1
+XR1 IBIAS VCC VSS sky130_fd_pr__res_xhigh_po W=1 L=9 mult=1 m=1
+.ends
+.end

@@ -1,0 +1,9 @@
+** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/active-resistor.sch
+.subckt active-resistor VCC IBIAS RP RN VSS
+*.PININFO VCC:B VSS:B IBIAS:I RP:B RN:B
+XM9 RBIAS IBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 m=1
+XM10 RBIAS RBIAS net1 VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=1 nf=1 m=1
+XM11 net1 net1 VCC VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=7.5 nf=1 m=1
+XM8 RN RBIAS RP VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=7 nf=2 m=1
+.ends
+.end
