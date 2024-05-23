@@ -1,0 +1,46 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1716523272
+<< pwell >>
+rect 636 564 802 632
+<< viali >>
+rect -18 678 16 8654
+rect 78 582 406 616
+rect 652 582 790 616
+<< metal1 >>
+rect -18 8744 16 8834
+rect 320 8788 394 8834
+rect -34 8654 130 8744
+rect 348 8736 394 8788
+rect -34 678 -18 8654
+rect 16 768 130 8654
+rect 572 3540 902 4102
+rect 16 678 46 768
+rect 348 760 756 1144
+rect 170 726 756 760
+rect 158 682 756 726
+rect -34 628 46 678
+rect -34 616 416 628
+rect 636 616 802 632
+rect -34 582 78 616
+rect 406 582 652 616
+rect 790 582 886 616
+rect -34 568 416 582
+rect 636 564 802 582
+use sky130_fd_pr__res_generic_po_A9B8VS  sky130_fd_pr__res_generic_po_A9B8VS_0
+timestamp 1716523272
+transform 1 0 737 0 1 2340
+box -199 -1796 199 1796
+use sky130_fd_pr__nfet_01v8_Q7E5KY  XM3
+timestamp 1716523272
+transform 1 0 242 0 1 4756
+box -296 -4210 296 4210
+<< labels >>
+flabel metal1 -34 568 98 628 0 FreeSans 480 0 0 0 VSS
+port 3 nsew
+flabel metal1 572 3540 902 4102 0 FreeSans 480 0 0 0 VCC
+port 4 nsew
+flabel metal1 348 682 756 1144 0 FreeSans 1600 0 0 0 IBIAS
+port 5 nsew
+<< end >>

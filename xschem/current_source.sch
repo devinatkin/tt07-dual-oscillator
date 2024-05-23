@@ -23,10 +23,6 @@ N -170 -80 -170 -10 {
 lab=VCC}
 N -170 240 -130 240 {
 lab=VSS}
-N -270 20 -200 20 {
-lab=VSS}
-N -200 20 -190 20 {
-lab=VSS}
 C {devices/iopin.sym} -105 -160 0 0 {name=p1 lab=VCC}
 C {devices/iopin.sym} -105 -135 0 0 {name=p2 lab=VSS}
 C {devices/lab_pin.sym} -170 220 0 0 {name=p8 sig_type=std_logic lab=VSS}
@@ -47,10 +43,8 @@ spiceprefix=X
 C {devices/lab_pin.sym} -170 -60 0 0 {name=p12 sig_type=std_logic lab=VCC}
 C {devices/lab_pin.sym} -210 90 0 0 {name=p13 sig_type=std_logic lab=IBIAS}
 C {devices/opin.sym} -30 80 0 0 {name=p3 lab=IBIAS}
-C {sky130_fd_pr/res_xhigh_po.sym} -170 20 0 0 {name=R1
-W=1
-L=9
-model=res_xhigh_po
-spiceprefix=X
+C {sky130_fd_pr/res_generic_po.sym} -170 20 0 0 {name=R1
+W=0.33
+L=12
+model=res_generic_po
 mult=1}
-C {devices/lab_pin.sym} -230 20 1 0 {name=p4 sig_type=std_logic lab=VSS}

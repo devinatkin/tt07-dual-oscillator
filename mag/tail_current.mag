@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1716495288
+timestamp 1716523272
 << pwell >>
 rect 0 0 1387 922
 << psubdiff >>
@@ -229,35 +229,35 @@ rect 363 269 416 278
 rect 623 274 669 278
 rect 877 273 927 278
 use sky130_fd_pr__nfet_01v8_U654K6  sky130_fd_pr__nfet_01v8_U654K6_1
-timestamp 1716410989
+timestamp 1716523272
 transform 1 0 323 0 1 522
 box -79 -294 79 294
 use sky130_fd_pr__nfet_01v8_U654K6  sky130_fd_pr__nfet_01v8_U654K6_2
-timestamp 1716410989
+timestamp 1716523272
 transform 1 0 452 0 1 522
 box -79 -294 79 294
 use sky130_fd_pr__nfet_01v8_U654K6  sky130_fd_pr__nfet_01v8_U654K6_3
-timestamp 1716410989
+timestamp 1716523272
 transform 1 0 1097 0 1 522
 box -79 -294 79 294
 use sky130_fd_pr__nfet_01v8_U654K6  sky130_fd_pr__nfet_01v8_U654K6_4
-timestamp 1716410989
+timestamp 1716523272
 transform 1 0 581 0 1 522
 box -79 -294 79 294
 use sky130_fd_pr__nfet_01v8_U654K6  sky130_fd_pr__nfet_01v8_U654K6_5
-timestamp 1716410989
+timestamp 1716523272
 transform 1 0 710 0 1 522
 box -79 -294 79 294
 use sky130_fd_pr__nfet_01v8_U654K6  sky130_fd_pr__nfet_01v8_U654K6_6
-timestamp 1716410989
+timestamp 1716523272
 transform 1 0 839 0 1 522
 box -79 -294 79 294
 use sky130_fd_pr__nfet_01v8_U654K6  sky130_fd_pr__nfet_01v8_U654K6_7
-timestamp 1716410989
+timestamp 1716523272
 transform 1 0 968 0 1 522
 box -79 -294 79 294
 use sky130_fd_pr__nfet_01v8_U654K6  sky130_fd_pr__nfet_01v8_U654K6_8
-timestamp 1716410989
+timestamp 1716523272
 transform 1 0 1226 0 1 522
 box -79 -294 79 294
 << labels >>

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1716495568
+timestamp 1716523272
 << nwell >>
 rect 3450 2006 4804 2104
 rect 3450 1934 3582 2006
@@ -159,23 +159,23 @@ rect 4228 426 4268 730
 rect 4450 426 4492 730
 rect 4228 398 4492 426
 use sky130_fd_pr__nfet_01v8_VNG24X  sky130_fd_pr__nfet_01v8_VNG24X_0
-timestamp 1716489041
+timestamp 1716523272
 transform 1 0 3747 0 1 -1074
 box -296 -710 296 710
-use sky130_fd_pr__pfet_01v8_lvt_65E2LK  sky130_fd_pr__pfet_01v8_lvt_65E2LK_0
-timestamp 1716495568
+use sky130_fd_pr__pfet_01v8_lvt_B5E2Q5  sky130_fd_pr__pfet_01v8_lvt_B5E2Q5_0
+timestamp 1716523272
 transform 1 0 3696 0 1 -45
 box -246 -319 246 319
 use sky130_fd_pr__pfet_01v8_lvt_E4WS6L  sky130_fd_pr__pfet_01v8_lvt_E4WS6L_0
-timestamp 1716495462
+timestamp 1716523272
 transform 1 0 4557 0 1 1088
 box -246 -919 246 919
 use sky130_fd_pr__pfet_01v8_lvt_EG9S6L  sky130_fd_pr__pfet_01v8_lvt_EG9S6L_0
-timestamp 1716495568
+timestamp 1716523272
 transform 1 0 4171 0 1 1088
 box -246 -919 246 919
 use sky130_fd_pr__pfet_01v8_lvt_NZC8UH  sky130_fd_pr__pfet_01v8_lvt_NZC8UH_0
-timestamp 1716495568
+timestamp 1716523272
 transform 1 0 3696 0 1 1137
 box -246 -969 246 969
 << labels >>

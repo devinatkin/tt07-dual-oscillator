@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1715224094
+timestamp 1716523272
 << psubdiff >>
 rect 25170 20 25303 721
 << nsubdiff >>
@@ -39,131 +39,131 @@ rect 45 699 25036 704
 rect 25190 699 25213 816
 rect 45 688 25213 699
 use inverter  inverter_0
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 24331 0 1 -1669
 box 902 1668 1828 3314
 use inverter  inverter_1
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 22595 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[0]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 23420 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[2]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 21778 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[3]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 20968 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[4]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 20158 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[5]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 19348 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[6]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 18538 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[7]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 17728 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[8]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 16918 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[9]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 16108 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[10]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 15298 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[11]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 14488 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[12]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 13678 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[13]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 12868 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[14]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 12058 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[15]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 11248 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[16]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 10438 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[17]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 9628 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[18]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 8818 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[19]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 8008 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[20]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 7198 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[21]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 6388 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[22]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 5578 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[23]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 4768 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[24]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 3958 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[25]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 3148 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[26]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 2338 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[27]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 1528 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[28]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 718 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[29]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 -102 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[30]
-timestamp 1715222833
+timestamp 1716523272
 transform 1 0 -902 0 1 -1669
 box 902 1668 1828 3314
 << labels >>
