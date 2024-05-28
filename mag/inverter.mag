@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1716523272
+timestamp 1716849570
 << nwell >>
 rect 451 1212 914 1657
 << pwell >>
@@ -123,19 +123,19 @@ rect 601 839 605 884
 rect 652 839 658 884
 rect 601 836 658 839
 use sky130_fd_pr__nfet_01v8_EEHCG5  sky130_fd_pr__nfet_01v8_EEHCG5_0
-timestamp 1716523272
+timestamp 1716849570
 transform 0 -1 685 1 0 1081
 box -79 -94 79 94
 use sky130_fd_pr__nfet_01v8_EEHCG5  sky130_fd_pr__nfet_01v8_EEHCG5_1
-timestamp 1716523272
+timestamp 1716849570
 transform 0 -1 685 1 0 952
 box -79 -94 79 94
 use sky130_fd_pr__pfet_01v8_BPT9FA  sky130_fd_pr__pfet_01v8_BPT9FA_0
-timestamp 1716523272
+timestamp 1716849570
 transform 0 -1 692 1 0 1371
 box -97 -150 97 150
 use sky130_fd_pr__pfet_01v8_BPT9FA  XM3
-timestamp 1716523272
+timestamp 1716849570
 transform 0 -1 692 1 0 1500
 box -97 -150 97 150
 << labels >>

@@ -1,20 +1,52 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1716523272
+timestamp 1716849570
 << psubdiff >>
 rect 25170 20 25303 721
 << nsubdiff >>
 rect 25186 791 25298 1609
 << metal1 >>
 rect 1 1465 226 1646
+rect 890 1464 1850 1646
+rect 2530 1464 3362 1646
+rect 4124 1462 4914 1646
+rect 5732 1568 6506 1646
+rect 5680 1466 6506 1568
+rect 5680 1464 5810 1466
+rect 7380 1464 8172 1646
+rect 8920 1464 9764 1646
+rect 10540 1464 11458 1646
+rect 12188 1466 13034 1646
+rect 13792 1466 14658 1646
+rect 15418 1464 16312 1646
 rect 25114 1465 25306 1605
 rect 26025 1466 26133 1582
+rect 836 686 1736 826
+rect 2478 686 3332 826
+rect 4090 690 5018 824
+rect 5650 688 6612 826
+rect 7302 686 8202 826
+rect 8924 686 9808 826
+rect 10548 688 11436 826
+rect 12198 688 13048 826
+rect 13810 686 14680 826
+rect 15408 686 16346 826
 rect 25153 816 25375 826
 rect 25190 699 25375 816
 rect 25153 688 25375 699
 rect 25889 658 26089 858
 rect 0 0 232 106
+rect 882 -2 1714 108
+rect 2494 0 3344 108
+rect 4042 -2 5022 106
+rect 5670 -1 8120 108
+rect 8910 -1 9762 108
+rect 5680 -2 8120 -1
+rect 10608 -2 11386 106
+rect 12150 -1 12986 108
+rect 13770 -1 14622 108
+rect 15390 -1 16210 108
 << via1 >>
 rect 56 704 209 814
 rect 25036 699 25190 816
@@ -39,131 +71,91 @@ rect 45 699 25036 704
 rect 25190 699 25213 816
 rect 45 688 25213 699
 use inverter  inverter_0
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 24331 0 1 -1669
 box 902 1668 1828 3314
 use inverter  inverter_1
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 22595 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[0]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 23420 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[2]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 21778 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[3]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 20968 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[4]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 20158 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[5]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 19348 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[6]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 18538 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[7]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 17728 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[8]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 16918 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[9]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 16108 0 1 -1669
 box 902 1668 1828 3314
 use inverter  x1[10]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 15298 0 1 -1669
 box 902 1668 1828 3314
-use inverter  x1[11]
-timestamp 1716523272
-transform 1 0 14488 0 1 -1669
-box 902 1668 1828 3314
 use inverter  x1[12]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 13678 0 1 -1669
 box 902 1668 1828 3314
-use inverter  x1[13]
-timestamp 1716523272
-transform 1 0 12868 0 1 -1669
-box 902 1668 1828 3314
 use inverter  x1[14]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 12058 0 1 -1669
 box 902 1668 1828 3314
-use inverter  x1[15]
-timestamp 1716523272
-transform 1 0 11248 0 1 -1669
-box 902 1668 1828 3314
 use inverter  x1[16]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 10438 0 1 -1669
 box 902 1668 1828 3314
-use inverter  x1[17]
-timestamp 1716523272
-transform 1 0 9628 0 1 -1669
-box 902 1668 1828 3314
 use inverter  x1[18]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 8818 0 1 -1669
 box 902 1668 1828 3314
-use inverter  x1[19]
-timestamp 1716523272
-transform 1 0 8008 0 1 -1669
-box 902 1668 1828 3314
 use inverter  x1[20]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 7198 0 1 -1669
 box 902 1668 1828 3314
-use inverter  x1[21]
-timestamp 1716523272
-transform 1 0 6388 0 1 -1669
-box 902 1668 1828 3314
 use inverter  x1[22]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 5578 0 1 -1669
 box 902 1668 1828 3314
-use inverter  x1[23]
-timestamp 1716523272
-transform 1 0 4768 0 1 -1669
-box 902 1668 1828 3314
 use inverter  x1[24]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 3958 0 1 -1669
 box 902 1668 1828 3314
-use inverter  x1[25]
-timestamp 1716523272
-transform 1 0 3148 0 1 -1669
-box 902 1668 1828 3314
 use inverter  x1[26]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 2338 0 1 -1669
 box 902 1668 1828 3314
-use inverter  x1[27]
-timestamp 1716523272
-transform 1 0 1528 0 1 -1669
-box 902 1668 1828 3314
 use inverter  x1[28]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 718 0 1 -1669
 box 902 1668 1828 3314
-use inverter  x1[29]
-timestamp 1716523272
-transform 1 0 -102 0 1 -1669
-box 902 1668 1828 3314
 use inverter  x1[30]
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 -902 0 1 -1669
 box 902 1668 1828 3314
 << labels >>

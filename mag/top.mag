@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1716524512
+timestamp 1716849570
 << pwell >>
 rect 1090 -540 1416 -430
 << metal1 >>
@@ -211,25 +211,25 @@ rect 18894 -408 18895 -403
 rect 19101 -408 19102 -202
 rect 18894 -409 19102 -408
 use current_source  current_source_0
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 -1330 0 1 -4270
 box -54 544 936 8966
 use opamp_1  opamp_1_0
-timestamp 1716526700
+timestamp 1716849570
 transform 1 0 6896 0 1 2202
 box 1092 -2630 8676 5872
 use opamp_1  opamp_1_1
-timestamp 1716526700
+timestamp 1716849570
 transform 1 0 -688 0 1 2202
 box 1092 -2630 8676 5872
 use oscillator_20MHZ  oscillator_20MHZ_0
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 404 0 1 -3721
-box 0 -1 26159 1646
+box 0 -2 26159 1646
 use oscillator_21MHZ  oscillator_21MHZ_0
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 404 0 -1 -431
-box 0 -1 18074 1645
+box 0 -1 18074 1646
 << labels >>
 flabel metal1 428 -2228 1106 -1930 0 FreeSans 1600 0 0 0 VCC
 port 0 nsew

@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1716526700
+timestamp 1716849570
 << nwell >>
 rect 2611 240 4338 630
 rect 4325 239 4338 240
@@ -286,27 +286,27 @@ rect 2770 179 2788 294
 rect 2876 179 2892 294
 rect 2770 161 2892 179
 use active-resistor  active-resistor_0
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 209 0 1 -422
 box 1725 -892 2402 1053
 use activeload  activeload_0
-timestamp 1716524512
+timestamp 1716849570
 transform 1 0 546 0 1 1226
 box 0 0 1387 1710
 use indiff  indiff_0
-timestamp 1716524512
+timestamp 1716849570
 transform 1 0 762 0 1 -240
 box -191 -152 1172 1465
 use second_stage  second_stage_0
-timestamp 1716524512
+timestamp 1716849570
 transform 1 0 2725 0 1 -1233
 box -114 -82 1613 1473
 use sky130_fd_pr__cap_mim_m3_1_NY928X  sky130_fd_pr__cap_mim_m3_1_NY928X_0
-timestamp 1716524019
+timestamp 1716849570
 transform -1 0 3197 0 -1 1490
 box -1093 -670 1093 670
 use tail_current  tail_current_0
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 546 0 1 -1314
 box 0 0 1387 922
 << labels >>

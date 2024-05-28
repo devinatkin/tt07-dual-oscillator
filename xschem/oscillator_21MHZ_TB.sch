@@ -5,6 +5,75 @@ K {}
 V {}
 S {}
 E {}
+B 2 320 -420 900 -100 {flags=graph,unlocked
+y1=0
+
+ypos1=0.046765495
+ypos2=0.8186265
+divy=5
+subdivy=1
+unity=1
+x1=5.3403516e-08
+x2=1.5433947e-07
+divx=5
+subdivx=1
+
+
+
+unitx=1
+logx=0
+logy=0
+hilight_wave=-1
+
+
+
+digital=1
+dataset=0
+
+
+sim_type=tran
+rainbow=1
+y2=2
+
+
+
+
+
+
+
+
+
+color=4
+node=out}
+B 2 1020 -410 1600 -90 {flags=graph,unlocked
+y1=0
+
+ypos1=-0.018575041
+ypos2=4.2742004
+divy=5
+subdivy=1
+unity=u
+x1=2.0517237e-07
+x2=2.1824746e-07
+divx=5
+subdivx=1
+
+
+
+unitx=1
+logx=0
+logy=0
+hilight_wave=-1
+
+
+
+digital=1
+dataset=0
+color="4 7 7"
+node="current;\\"1000000 i(vvss) *\\""
+sim_type=tran
+rainbow=1
+y2=8}
 N 20 -140 20 -100 {
 lab=VCC}
 N 20 0 20 40 {
@@ -37,7 +106,7 @@ vvss vss 0 dc 0
 vvcc vcc 0 pwl 0 0 10n 0 10.1n VCC 3000n VCC
 
 .control
-tran 100p 3000n
+tran 10p 3000n
 write top_tb.raw
 .endc
 

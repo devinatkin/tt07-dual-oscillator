@@ -1,9 +1,7 @@
 ** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/oscillator_21MHZ.sch
 .subckt oscillator_21MHZ VCC OUT VSS
 *.PININFO VCC:B VSS:B OUT:O
-x1[20] INI[19] OUT_INI VCC VSS inverter
-x1[19] INI[18] INI[19] VCC VSS inverter
-x1[18] INI[17] INI[18] VCC VSS inverter
+x1[18] INI[17] OUT_INI VCC VSS inverter
 x1[17] INI[16] INI[17] VCC VSS inverter
 x1[16] INI[15] INI[16] VCC VSS inverter
 x1[15] INI[14] INI[15] VCC VSS inverter

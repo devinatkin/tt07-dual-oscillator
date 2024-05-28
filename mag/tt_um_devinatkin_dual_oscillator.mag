@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1716524512
+timestamp 1716849570
 << metal1 >>
 rect 19306 30088 19818 30158
 rect 19306 29660 19382 30088
@@ -146,9 +146,9 @@ rect 22450 0 22630 200
 rect 26866 0 27046 200
 rect 31282 0 31462 200
 use top  top_0 ~/tt07-dual-oscillator/mag
-timestamp 1716524512
+timestamp 1716849570
 transform 0 1 21596 -1 0 29776
-box -1384 -3726 26896 8074
+box -1384 -3733 26896 8074
 << labels >>
 flabel metal4 s 30974 44952 31034 45152 0 FreeSans 480 90 0 0 clk
 port 0 nsew signal input

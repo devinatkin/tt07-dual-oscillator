@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1716524512
+timestamp 1716849570
 << nwell >>
 rect 0 0 1387 1710
 << nsubdiff >>
@@ -254,27 +254,27 @@ rect 257 105 264 132
 rect 312 105 321 132
 rect 257 102 321 105
 use sky130_fd_pr__pfet_01v8_lvt_NFH92T  sky130_fd_pr__pfet_01v8_lvt_NFH92T_0
-timestamp 1716523272
+timestamp 1716849570
 transform 1 0 622 0 1 1300
 box -72 -300 72 300
 use sky130_fd_pr__pfet_01v8_lvt_YS6JVD  sky130_fd_pr__pfet_01v8_lvt_YS6JVD_0
-timestamp 1716524512
+timestamp 1716849570
 transform 1 0 1072 0 1 1300
 box -72 -300 72 300
 use sky130_fd_pr__pfet_01v8_lvt_YS6JVD  sky130_fd_pr__pfet_01v8_lvt_YS6JVD_1
-timestamp 1716524512
+timestamp 1716849570
 transform 1 0 172 0 1 1300
 box -72 -300 72 300
 use sky130_fd_pr__pfet_01v8_lvt_YS6JVD  sky130_fd_pr__pfet_01v8_lvt_YS6JVD_2
-timestamp 1716524512
+timestamp 1716849570
 transform 1 0 172 0 1 400
 box -72 -300 72 300
 use sky130_fd_pr__pfet_01v8_lvt_YS6JVD  sky130_fd_pr__pfet_01v8_lvt_YS6JVD_3
-timestamp 1716524512
+timestamp 1716849570
 transform 1 0 622 0 1 400
 box -72 -300 72 300
 use sky130_fd_pr__pfet_01v8_lvt_YS6JVD  sky130_fd_pr__pfet_01v8_lvt_YS6JVD_4
-timestamp 1716524512
+timestamp 1716849570
 transform 1 0 1072 0 1 400
 box -72 -300 72 300
 << labels >>
