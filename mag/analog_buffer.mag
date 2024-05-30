@@ -1,0 +1,29 @@
+magic
+tech sky130A
+timestamp 1717178954
+<< metal1 >>
+rect 36 3799 1174 3856
+rect -325 -363 3389 -314
+<< metal3 >>
+rect -115 2029 1020 2140
+rect 716 1395 849 1461
+rect -294 1350 849 1395
+rect 2795 585 3279 711
+rect 606 -141 901 -140
+rect 606 -256 1572 -141
+use opamp_1  opamp_1_0
+timestamp 1717178954
+transform 1 0 -917 0 1 952
+box 546 -1315 4338 2936
+<< labels >>
+flabel metal3 606 -256 613 -254 0 FreeSans 400 0 0 0 IBIAS
+port 0 nsew
+flabel metal1 -325 -363 3389 -314 0 FreeSans 400 0 0 0 VSS
+port 1 nsew
+flabel metal1 36 3799 1174 3856 0 FreeSans 400 0 0 0 VCC
+port 2 nsew
+flabel metal3 2795 585 3214 711 0 FreeSans 400 0 0 0 BUF_OUT
+port 3 nsew
+flabel metal3 -163 1350 828 1395 0 FreeSans 400 0 0 0 BUF_IN
+port 4 nsew
+<< end >>

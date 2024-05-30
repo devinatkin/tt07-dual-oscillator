@@ -1,23 +1,22 @@
 ** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/top.sch
-**.subckt top VCC OUTA OUTB VSS
-*.iopin VCC
-*.iopin VSS
-*.opin OUTA
-*.opin OUTB
+.subckt top VCC OUTA OUTB VSS
+*.PININFO VCC:B VSS:B OUTA:O OUTB:O
 x1 VCC OSCA VSS oscillator_20MHZ
 x2 VCC OSCB VSS oscillator_21MHZ
-x3 VCC OUTA OUTA OSCA VSS IBIAS opamp_1
-x4 VCC OUTB OUTB OSCB VSS IBIAS opamp_1
 x5 VCC VSS IBIAS current_source
-**.ends
+x6 VCC FIL_OUTA OSCA_BUF VSS IBIAS filter22M
+x7 VCC FIL_OUTB OSCB_BUF VSS IBIAS filter22M
+x10 VCC OSCA OSCA_BUF IBIAS VSS analog_buffer
+x8 VCC OSCB OSCB_BUF IBIAS VSS analog_buffer
+x9 VCC FIL_OUTA OUTA IBIAS VSS analog_buffer
+x3 VCC FIL_OUTB OUTB IBIAS VSS analog_buffer
+.ends
 
 * expanding   symbol:  oscillator_20MHZ.sym # of pins=3
 ** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/oscillator_20MHZ.sym
 ** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/oscillator_20MHZ.sch
 .subckt oscillator_20MHZ VCC OUT VSS
-*.iopin VCC
-*.iopin VSS
-*.opin OUT
+*.PININFO VCC:B VSS:B OUT:O
 x1[20] INI[19] OUT_INI VCC VSS inverter
 x1[19] INI[18] INI[19] VCC VSS inverter
 x1[18] INI[17] INI[18] VCC VSS inverter
@@ -47,9 +46,7 @@ x3 OUT OUT_INI VCC VSS inverter
 ** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/oscillator_21MHZ.sym
 ** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/oscillator_21MHZ.sch
 .subckt oscillator_21MHZ VCC OUT VSS
-*.iopin VCC
-*.iopin VSS
-*.opin OUT
+*.PININFO VCC:B VSS:B OUT:O
 x1[18] INI[17] OUT_INI VCC VSS inverter
 x1[17] INI[16] INI[17] VCC VSS inverter
 x1[16] INI[15] INI[16] VCC VSS inverter
@@ -73,35 +70,34 @@ x1 OUT OUT_INI VCC VSS inverter
 .ends
 
 
-* expanding   symbol:  opamp_1.sym # of pins=6
-** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/opamp_1.sym
-** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/opamp_1.sch
-.subckt opamp_1 VCC OUT INA INB VSS IBIAS
-*.ipin INA
-*.ipin INB
-*.opin OUT
-*.iopin VCC
-*.iopin VSS
-*.ipin IBIAS
-x1 DIFF_OUT MIRR INA INB TAILV VSS indiff
-x2 VCC DIFF_OUT MIRR activeload
-x3 VCC IBIAS DIFF_OUT RN VSS active-resistor
-x4 TAILV IBIAS VSS tail_current
-x5 VCC DIFF_OUT OUT IBIAS VSS second_stage
-XC2 RN OUT sky130_fd_pr__cap_mim_m3_1 W=20 L=13 MF=1 m=1
-.ends
-
-
 * expanding   symbol:  current_source.sym # of pins=3
 ** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/current_source.sym
 ** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/current_source.sch
 .subckt current_source VCC VSS IBIAS
-*.iopin VCC
-*.iopin VSS
-*.opin IBIAS
-XM3 IBIAS IBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+*.PININFO VCC:B VSS:B IBIAS:O
+XM3 IBIAS IBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 m=1
 R1 IBIAS VCC sky130_fd_pr__res_generic_po W=0.33 L=12 m=1
+.ends
+
+
+* expanding   symbol:  filter22M.sym # of pins=5
+** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/filter22M.sym
+** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/filter22M.sch
+.subckt filter22M vcc fil_out fil_in vss IBIAS
+*.PININFO fil_out:O fil_in:I vcc:B vss:B IBIAS:I
+x1 VCC fil_out fil_out op_inb VSS IBIAS opamp_1
+R1 fil_in mid sky130_fd_pr__res_generic_po W=0.5 L=100 m=1
+R2 mid op_inb sky130_fd_pr__res_generic_po W=0.5 L=100 m=1
+x2 op_inb mid VSS fil_out capacitor_array
+.ends
+
+
+* expanding   symbol:  analog_buffer.sym # of pins=5
+** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/analog_buffer.sym
+** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/analog_buffer.sch
+.subckt analog_buffer VCC BUF_IN BUF_OUT IBIAS VSS
+*.PININFO BUF_IN:I VCC:B VSS:B IBIAS:I BUF_OUT:O
+x8 VCC BUF_OUT BUF_OUT BUF_IN VSS IBIAS opamp_1
 .ends
 
 
@@ -109,18 +105,45 @@ R1 IBIAS VCC sky130_fd_pr__res_generic_po W=0.33 L=12 m=1
 ** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/inverter.sym
 ** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/inverter.sch
 .subckt inverter OUT IN VCC VSS
-*.iopin VCC
-*.iopin VSS
-*.ipin IN
-*.opin OUT
-XM1 OUT IN net1 VCC sky130_fd_pr__pfet_01v8 L=1 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM2 OUT IN net2 VSS sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM3 net1 VSS VCC VCC sky130_fd_pr__pfet_01v8 L=1 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM4 net2 VCC VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+*.PININFO VCC:B VSS:B IN:I OUT:O
+XM1 OUT IN net1 VCC sky130_fd_pr__pfet_01v8 L=1 W=2 nf=1 m=1
+XM2 OUT IN net2 VSS sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 m=1
+XM3 net1 VSS VCC VCC sky130_fd_pr__pfet_01v8 L=1 W=2 nf=1 m=1
+XM4 net2 VCC VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  opamp_1.sym # of pins=6
+** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/opamp_1.sym
+** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/opamp_1.sch
+.subckt opamp_1 VCC OUT INA INB VSS IBIAS
+*.PININFO INA:I INB:I OUT:O VCC:B VSS:B IBIAS:I
+x1 DIFF_OUT MIRR INA INB TAILV VSS indiff
+x2 VCC DIFF_OUT MIRR activeload
+x3 VCC IBIAS DIFF_OUT RN VSS active-resistor
+x4 TAILV IBIAS VSS tail_current
+x5 VCC DIFF_OUT OUT IBIAS VSS second_stage
+XC2 RN OUT sky130_fd_pr__cap_mim_m3_1 W=20 L=13 m=1
+.ends
+
+
+* expanding   symbol:  capacitor_array.sym # of pins=4
+** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/capacitor_array.sym
+** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/capacitor_array.sch
+.subckt capacitor_array CAPA_P CAPB_P CAPA_N CAPB_N
+*.PININFO CAPA_P:B CAPA_N:B CAPB_P:B CAPB_N:B
+XC13 CAPA_P CAPA_N sky130_fd_pr__cap_mim_m3_1 W=10 L=6 m=1
+XC1 CAPA_P CAPA_N sky130_fd_pr__cap_mim_m3_1 W=10 L=6 m=1
+XC2 CAPA_P CAPA_N sky130_fd_pr__cap_mim_m3_1 W=10 L=6 m=1
+XC3 CAPA_P CAPA_N sky130_fd_pr__cap_mim_m3_1 W=10 L=6 m=1
+XC4 CAPB_P CAPB_N sky130_fd_pr__cap_mim_m3_1 W=10 L=6 m=1
+XC5 CAPB_P CAPB_N sky130_fd_pr__cap_mim_m3_1 W=10 L=6 m=1
+XC6 CAPB_P CAPB_N sky130_fd_pr__cap_mim_m3_1 W=10 L=6 m=1
+XC7 CAPB_P CAPB_N sky130_fd_pr__cap_mim_m3_1 W=10 L=6 m=1
+XC8 CAPB_P CAPB_N sky130_fd_pr__cap_mim_m3_1 W=10 L=6 m=1
+XC9 CAPB_P CAPB_N sky130_fd_pr__cap_mim_m3_1 W=10 L=6 m=1
+XC10 CAPB_P CAPB_N sky130_fd_pr__cap_mim_m3_1 W=10 L=6 m=1
+XC11 CAPB_P CAPB_N sky130_fd_pr__cap_mim_m3_1 W=10 L=6 m=1
 .ends
 
 
@@ -128,16 +151,9 @@ XM4 net2 VCC VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 ad='int((nf+1)/2) * W/
 ** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/indiff.sym
 ** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/indiff.sch
 .subckt indiff DB DA INA INB S VSS
-*.ipin INA
-*.ipin INB
-*.iopin DA
-*.iopin DB
-*.iopin S
-*.iopin VSS
-XM1 DA INA S VSS sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
-XM2 DB INB S VSS sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+*.PININFO INA:I INB:I DA:B DB:B S:B VSS:B
+XM1 DA INA S VSS sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 m=4
+XM2 DB INB S VSS sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 m=4
 .ends
 
 
@@ -145,13 +161,9 @@ XM2 DB INB S VSS sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 ad='int((nf+1)/2) * W/nf *
 ** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/activeload.sym
 ** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/activeload.sch
 .subckt activeload VCC DB DA
-*.iopin DA
-*.iopin DB
-*.iopin VCC
-XM4 DA DA VCC VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=3 m=3
-XM5 DB DA VCC VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=3 m=3
+*.PININFO DA:B DB:B VCC:B
+XM4 DA DA VCC VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=5 nf=1 m=3
+XM5 DB DA VCC VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=5 nf=1 m=3
 .ends
 
 
@@ -159,19 +171,11 @@ XM5 DB DA VCC VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=5 nf=1 ad='int((nf+1)/2) *
 ** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/active-resistor.sym
 ** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/active-resistor.sch
 .subckt active-resistor VCC IBIAS RP RN VSS
-*.iopin VCC
-*.iopin VSS
-*.ipin IBIAS
-*.iopin RP
-*.iopin RN
-XM9 RBIAS IBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM10 RBIAS RBIAS net1 VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM11 net1 net1 VCC VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=7.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM8 RN RBIAS RP VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+*.PININFO VCC:B VSS:B IBIAS:I RP:B RN:B
+XM9 RBIAS IBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 m=1
+XM10 RBIAS RBIAS net1 VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=1 nf=1 m=1
+XM11 net1 net1 VCC VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=7.5 nf=1 m=1
+XM8 RN RBIAS RP VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=7 nf=1 m=2
 .ends
 
 
@@ -179,11 +183,8 @@ XM8 RN RBIAS RP VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=7 nf=1 ad='int((nf+1)/2)
 ** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/tail_current.sym
 ** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/tail_current.sch
 .subckt tail_current TAILV IBIAS VSS
-*.iopin VSS
-*.ipin IBIAS
-*.iopin TAILV
-XM3 TAILV IBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=8 m=8
+*.PININFO VSS:B IBIAS:I TAILV:B
+XM3 TAILV IBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 m=8
 .ends
 
 
@@ -191,15 +192,9 @@ XM3 TAILV IBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 ad='int((nf+1)/2) *
 ** sym_path: /home/dmatkin/tt07-dual-oscillator/xschem/second_stage.sym
 ** sch_path: /home/dmatkin/tt07-dual-oscillator/xschem/second_stage.sch
 .subckt second_stage VCC DIFF_OUT OUT IBIAS VSS
-*.iopin VCC
-*.iopin VSS
-*.ipin IBIAS
-*.ipin DIFF_OUT
-*.opin OUT
-XM6 OUT IBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=0.5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=19 m=19
-XM2 OUT DIFF_OUT VCC VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=14 m=14
+*.PININFO VCC:B VSS:B IBIAS:I DIFF_OUT:I OUT:O
+XM6 OUT IBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=0.5 W=5 nf=1 m=19
+XM2 OUT DIFF_OUT VCC VCC sky130_fd_pr__pfet_01v8_lvt L=0.5 W=5 nf=1 m=14
 .ends
 
 .end

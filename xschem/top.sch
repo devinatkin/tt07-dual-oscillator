@@ -86,7 +86,7 @@ lab=VSS}
 N 2295 -105 2295 -60 {
 lab=VCC}
 N 2440 20 2505 20 {
-lab=#net1}
+lab=OUTB}
 C {devices/iopin.sym} -150 -120 0 0 {name=p1 lab=VCC}
 C {devices/iopin.sym} -150 -60 0 0 {name=p2 lab=VSS}
 C {devices/opin.sym} -70 -80 0 0 {name=p4 lab=OUTA}
