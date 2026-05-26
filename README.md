@@ -1,6 +1,6 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/lvs/badge.svg)
 
-# Tiny Tapeout Analog Project - Dual Analog Oscillators 20Mhz 21Mhz
+# Tiny Tapeout Analog Project - Dual Analog Oscillators 13Mhz 14Mhz
 
 - [Read the documentation for project](docs/info.md)
 
