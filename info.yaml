@@ -3,7 +3,7 @@ project:
   title:        "dual oscillator"      # Project title
   author:       "Devin Atkin"      # Your name
   discord:      "devinatkin"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "20 Mhz and 21Mhz Output Sine Waves"      # One line description of what your project does
+  description:  "13 MHz and 14 MHz output sine waves"      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -53,8 +53,8 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: "20Mhz Output"
-  ua[1]: "21Mhz Output"
+  ua[0]: "13 MHz Output"
+  ua[1]: "14 MHz Output"
   ua[2]: ""
   ua[3]: ""
   ua[4]: ""

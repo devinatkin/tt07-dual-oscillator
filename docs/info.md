@@ -11,7 +11,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ![Top Level TB Schematic](top_level.jpg)
 
-This project should generate 2 sinusoidal oscillators centered around ~0.9V relative to the chips ground. The oscillators are based on a pair of ring oscillators so they should oscillate regardless of the chips corner; however, their frequency will vary together dramatically. Their final simulated output frequencies are slightly above their respective targets of 20MHz and 21Mhz with a slightly greater seperatation between them.
+This project generates two sinusoidal oscillator outputs centered around ~0.9 V relative to the chip ground. The oscillators are based on a pair of ring oscillators, so they should oscillate across process corners; however, their frequencies will vary together. Post-layout simulation produced output frequencies of approximately 13 MHz and 14 MHz after extracted parasitics were included.
 
 ![Sine Output](sine_output.jpg)
 
@@ -30,11 +30,11 @@ The Op Amp is designed based on the work in [opamp_1_design.md](link-to-opamp_1_
 #### Analog Buffer
 The analog buffer component is simply an op-amp configured as a voltage follower. This is mostly made into a seperate module to maintain consistency across followers as well as to minimize the amount of layout work required as the component gets reused multiple times.
 
-### Oscillator 20Mhz - 21Mhz
-![20Mhz Oscillator](oscillator20mhz.jpg)
-![21Mhz Oscillator](oscillator21mhz.jpg)
+### Oscillators: 13 MHz and 14 MHz post-layout
+![13 MHz oscillator](oscillator20mhz.jpg)
+![14 MHz oscillator](oscillator21mhz.jpg)
 
-The oscillators are basic ring oscillators with a single op-amp on the output. They are 21 and 19 inverters long respectively. These produce close to the desired output frequencies. 
+The oscillators are basic ring oscillators with a single op-amp on each output. They are 21 and 19 inverters long, respectively, and produce post-layout simulated frequencies of approximately 13 MHz and 14 MHz.
 
 
 ### filter 22Mhz
